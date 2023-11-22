@@ -422,7 +422,7 @@ export function Editor({ width, height }: EditorProps) {
 
 					// If mouse is down on any of our entities dont set
 					// selected entity to undefined
-					for (const [id, entity] of Object.entries(entities)) {
+					for (const [_, entity] of Object.entries(entities)) {
 						if (
 							isWithinBounds(position, {
 								position: entity.position,
